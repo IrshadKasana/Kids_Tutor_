@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,"you visited numbers",Toast.LENGTH_LONG).show();
             }
         });
-        TextView textViewa=(TextView)findViewById(R.id.textView1);
+        TextView textViewa=(TextView)findViewById(R.id.textView3);
         textViewa.setOnClickListener(new java.com.example.kidstutor.NumberClickListener(){
             @Override
             public void onClick(View v) {
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        TextView textViewb=(TextView)findViewById(R.id.textView1);
+        TextView textViewb=(TextView)findViewById(R.id.textView4);
         textViewb.setOnClickListener(new java.com.example.kidstutor.NumberClickListener(){
             @Override
             public void onClick(View v) {
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        TextView textViewc=(TextView)findViewById(R.id.textView1);
+        TextView textViewc=(TextView)findViewById(R.id.textView5);
         textViewc.setOnClickListener(new java.com.example.kidstutor.NumberClickListener(){
             @Override
             public void onClick(View v) {
