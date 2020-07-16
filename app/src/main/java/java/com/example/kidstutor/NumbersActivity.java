@@ -20,7 +20,18 @@ import java.util.ArrayList;
 public class NumbersActivity extends AppCompatActivity {
     private MediaPlayer mMediaPlayer;
     private AudioManager mAudioManager;
+ /// not included code lines
+  //  focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
+   //     mMediaPlayer.pause();
+   //     mMediaPlayer.seekTo(0);
+   // } else if (focusChange == AudioManager.AUDIOFOCUS_GAIN) {
+   //     mMediaPlayer.start();
+   // } else if (focusChange == AudioManager.AUDIOFOCUS_LOSS) {
+   //     releaseMediaPlayer();
 
+
+
+    ////
     AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener =
             new AudioManager.OnAudioFocusChangeListener() {
 
@@ -50,7 +61,7 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.words_list);
         mAudioManager=(AudioManager)getSystemService(Context.AUDIO_SERVICE);
-
+        // added the numbers
         final ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word("one","lutti",R.drawable.number_one, R.raw.number_one));
         words.add(new Word("two","otiiko",R.drawable.number_two, R.raw.number_two));
