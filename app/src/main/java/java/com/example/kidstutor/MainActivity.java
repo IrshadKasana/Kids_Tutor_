@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         java.com.example.kidstutor.NumberClickListener numberClickListener=new java.com.example.kidstutor.NumberClickListener();
-           // linking with xml layouts
+           // linking with xml layouts and call listeners
         TextView textView=(TextView)findViewById(R.id.textView1);
         textView.setOnClickListener(new java.com.example.kidstutor.NumberClickListener(){
             @Override
